@@ -1701,7 +1701,7 @@ Usage (In Ghost editor):
     width: 18px;
     height: 18px;
     stroke: rgba(0,0,0,0.7);
-    transform: rotate(90deg);
+    transform: rotate(-90deg) scaleX(-1);
 }
 
 .floating-header-share-tw,

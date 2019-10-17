@@ -566,6 +566,9 @@ a:focus, a:hover {
 .post-full-image {
     background-color: #fff;
     background-repeat: no-repeat;
+    padding-bottom: 70%;
+    background: #fff 55%;
+    background-size: contain;
 }
 
 .post-full-content {
