@@ -30,12 +30,10 @@
 <main id="site-main" class="site-main outer">
     <div class="inner">
         <div class="post-feed">
-            {{#get "posts" include="tags,authors" filter="tags:-unlist"}}
-                {{#foreach posts}}
-                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                    {{> "post-card"}}
-                {{/foreach}}
-            {{/get}}
+            {{#foreach posts}}
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{> "post-card"}}
+            {{/foreach}}
         </div>
     </div>
 </main>

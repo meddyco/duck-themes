@@ -57,6 +57,8 @@ into the {body} of the default.hbs template --}}
 
             </footer>
 
+            <div id="disqus_thread"></div>
+
             {{!--
             <section class="post-full-comments">
                 If you want to embed comments, this is a good place to do it!
@@ -194,5 +196,17 @@ $(document).ready(function () {
     update();
 
 });
+</script>
+<script>
+var disqus_config = function () {
+    this.page.url = "{{url absolute="true"}}";  
+    this.page.identifier = "ghost-{{comment_id}}"
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://meddy-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
 </script>
 {{/contentFor}}
