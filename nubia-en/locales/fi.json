@@ -1,0 +1,66 @@
+{
+  "Loading": "Ladataan",
+  "More Posts": "Lisää artikkelit",
+
+  "Recent Posts": "Uusimmat artikkelit",
+  "Featured Post": "Esitetty artikkelit",
+  "Page Not Found": "Sivua ei löydetty",
+  "Load Comments": "Kommentit",
+  "You might also like": "Saatat olla kiinnostunut",
+  "Authors": "Tekijät",
+  "Navigation": "suunnistus",
+  "Newsletter": "tiedote",
+  "Advertise": "Mainostaa",
+  "Tags": "Tags",
+  "1 min read": "1 minuutti lukea",
+  "% min read": "% minuutti lukea",
+  "Published with {ghostLink}": "Julkaistu {ghostLink}",
+
+  "Share on Twitter": "Jaa Twitter",
+  "Share on Facebook": "Jaa Facebook",
+  "Share on LinkedIn": "Jaa LinkedIn",
+  "Share on Pinterest": "Jaa Pinterest",
+  "Share via Email": "Jaa sähköpostitse",
+  "Copy link": "Kopioi linkki",
+  "Link copied to clipboard": "Linkki kopioitiin leikepöydälle",
+
+  "Search": "Hae",
+  "Search {siteTitle}": "Hae {siteTitle}",
+  "Type to Search": "kirjoita hakua",
+
+  "Log In": "Kirjaudu sisään",
+  "Sign Up": "Kirjaudu",
+  "Continue": "Jatkaa",
+  "Subscribe": "Tilaa",
+  "Subscribe Now": "Tilaa nyt",
+  "Your email ": "Sähköpostiosoitteesi",
+  "Please check your inbox and click the link to confirm your subscription.": "Tarkista postilaatikko ja napsauta linkkiä vahvistaaksesi tilauksesi.",
+  "Please enter a valid email address!": "Ole hyvä ja syötä toimiva sähköpostiosoite!",
+  "An error occurred, please try again later.": "Tapahtui virhe, yritä myöhemmin uudelleen.",
+
+  "You've successfully subscribed to {siteTitle}": "Olet tilannut onnistuneesti sivuston {siteTitle}",
+  "Great! Next, complete checkout for full access to {siteTitle}": "Loistava! Seuraavaksi suorita kassalle täysi käyttöoikeus {siteTitle}",
+  "Welcome back! You've successfully signed in.": "Tervetuloa takaisin! Olet onnistuneesti kirjautunut sisään.",
+  "Success! Your account is fully activated, you now have access to all content.": "Menestys! Tilisi on täysin aktivoitu, sinulla on nyt pääsy kaikkeen sisältöön.",
+
+  "Already have an account?": "Onko sinulla jo tili?",
+  "Don't have an account yet?": "Eikö sinulla ole vielä tiliä?",
+
+  "This post is for paying subscribers only": "Tämä viesti on tarkoitettu vain maksaville tilaajille",
+  "This post is for subscribers only": "Tämä viesti on tarkoitettu vain tilaajille",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Liity uutiskirjeeseen saadaksesi uusimmat päivitykset postilaatikkoosi.",
+
+  "Choose your subscription": "Valitse tilauksesi",
+  "Unlock full access to {siteTitle} and see the entire library of members-only content & updates.": "Avaa {siteTitle} -sovelluksen täydet käyttöoikeudet ja katso koko kirja, joka sisältää vain jäsenille tarkoitettua sisältöä ja päivityksiä.",
+  "Sign Up to {siteTitle}": "Tilaa {siteTitle}",
+
+  "Welcome back!": "Tervetuloa takaisin!",
+  "Log Into your account again.": "Kirjaudu tiliisi uudelleen.",
+  "Send login link": "Lähetä kirjautumislinkki",
+
+  "Nice, you're a subscriber!": "Kiva, olet tilaaja!",
+  "You have an active {siteTitle} account with access to all posts.": "Sinulla on aktiivinen {siteTitle} -tili, jolla on pääsy kaikkiin viesteihin.",
+  "You're a subscriber to free members updates": "Olet tilaaja ilmaisille päivityksille jäsenille",
+  "You are subscribed to free updates from {siteTitle}, but don't have a paid subscription to read all the posts.": "Olet tilannut ilmaiset päivitykset sivustolta {siteTitle}, mutta sinulla ei ole maksettua tilausta kaikkien viestien lukemiseen."
+}

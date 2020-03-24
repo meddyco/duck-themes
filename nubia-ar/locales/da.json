@@ -1,0 +1,67 @@
+{
+  "Loading": "Indlæser",
+  "More Posts": "Flere indlæg",
+
+  "Recent Posts": "Seneste indlæg",
+  "Featured Post": "Udvalgte indlæg",
+  "Page Not Found": "Siden blev ikke fundet",
+  "Load Comments": "Kommentarer",
+  "You might also like": "Du kan være interesseret i",
+  "Authors": "Forfattere",
+  "Navigation": "Navigation",
+  "Newsletter": "Nyhedsbrev",
+  "Advertise": "Annoncer",
+  "Comments": "Kommentarer",
+  "Tags": "Tags",
+  "1 min read": "1 minut læses",
+  "% min read": "% minut læses",
+  "Published with {ghostLink}": "Udgivet med {ghostLink}",
+
+  "Share on Twitter": "Del på Twitter",
+  "Share on Facebook": "Del på Facebook",
+  "Share on LinkedIn": "Del på LinkedIn",
+  "Share on Pinterest": "Del på Pinterest",
+  "Share via Email": "Del via e-mail",
+  "Copy link": "Kopier link",
+  "Link copied to clipboard": "Link kopieret til udklipsholder",
+
+  "Search": "Søg",
+  "Search {siteTitle}": "Søg {siteTitle}",
+  "Type to Search": "Skriv til Søg",
+
+  "Log In": "Log ind",
+  "Sign Up": "Tilmelde",
+  "Continue": "Blive ved",
+  "Subscribe": "Tilmeld",
+  "Subscribe Now": "Tilmeld nu",
+  "Your email ": "Din email adresse",
+  "Please check your inbox and click the link to confirm your subscription.": "Kontroller din indbakke, og klik på linket for at bekræfte dit abonnement.",
+  "Please enter a valid email address!": "Indtast venligst en gyldig e-mailadresse!",
+  "An error occurred, please try again later.": "Der opstod en fejl. Prøv venligst igen senere.",
+
+  "You've successfully subscribed to {siteTitle}": "Du har abonneret på {siteTitle}",
+  "Great! Next, complete checkout for full access to {siteTitle}": "Store! Derefter skal du gennemføre kassen for fuld adgang til {siteTitle}",
+  "Welcome back! You've successfully signed in.": "Velkommen tilbage! Du er logget ind.",
+  "Success! Your account is fully activated, you now have access to all content.": "Succes! Din konto er fuldt aktiveret, du har nu adgang til alt indhold.",
+
+  "Already have an account?": "har du allerede en bruger?",
+  "Don't have an account yet?": "Har du ikke en konto endnu?",
+
+  "This post is for paying subscribers only": "Dette indlæg er kun til betalende abonnenter",
+  "This post is for subscribers only": "Dette indlæg er kun til abonnenter",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Deltag i nyhedsbrevet for at modtage de seneste opdateringer i din indbakke.",
+
+  "Choose your subscription": "Vælg dit abonnement",
+  "Unlock full access to {siteTitle} and see the entire library of members-only content & updates.": "Lås op for fuld adgang til {siteTitle} og se hele biblioteket med kun indhold og opdateringer til medlemmer.",
+  "Sign Up to {siteTitle}": "Tilmeld dig {siteTitle}",
+
+  "Welcome back!": "Velkommen tilbage!",
+  "Log Into your account again.": "Log ind på din konto igen.",
+  "Send login link": "Send login-link",
+
+  "Nice, you're a subscriber!": "Dejligt, du er abonnent!",
+  "You have an active {siteTitle} account with access to all posts.": "Du har en aktiv {siteTitle} -konto med adgang til alle indlæg.",
+  "You're a subscriber to free members updates": "Du er abonnent på gratis opdateringer af medlemmer",
+  "You are subscribed to free updates from {siteTitle}, but don't have a paid subscription to read all the posts.": "Du abonnerer på gratis opdateringer fra {siteTitle}, men har ikke et betalt abonnement for at læse alle indlæg."
+}

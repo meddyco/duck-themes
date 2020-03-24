@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  Elements > Page
+\*------------------------------------*/
+
+body {
+  color: $color-text;
+  font-size: $font-size-medium;
+  font-family: $font-serif;
+  line-height: $line-height-base;
+  background-color: $bg-color;
+  border: quarter($base-spacing-unit) solid $bg-gray;
+
+  @include mq($from: tablet) {
+    border: half($base-spacing-unit) solid $bg-gray;
+  }
+
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}

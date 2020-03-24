@@ -1,0 +1,34 @@
+{{!< ../default}}
+
+<div class='o-wrapper'>
+  {{#if @member}}
+    {{!-- Logged in: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+  {{else}}
+    {{!-- Not logged in: Signin form --}}
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <div class='c-archive'>
+          <h2 class='c-archive__title'>{{t 'Welcome back!'}}</h2>
+          <p class='c-archive__description'>{{t 'Log Into your account again.'}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <form data-members-form='signin' class='c-subscribe-form'>
+          <div class='form-group'>
+            <input type='email' class='c-subscribe-form__input' placeholder='{{t 'Your email ' }}' data-members-email autocomplete='false'>
+            <button type='submit' class='c-subscribe-form__btn c-btn c-btn--active c-btn--small c-btn--full'>{{t 'Send login link' }}</button>
+          </div>
+
+          <div class='u-alert u-alert--success u-mt-8'>{{t 'Please check your inbox and click the link to confirm your subscription.' }}</div>
+          <div class='u-alert u-alert--invalid u-mt-8'>{{t 'Please enter a valid email address!' }}</div>
+          <div class='u-alert u-alert--error u-mt-8'>{{t 'An error occurred, please try again later.' }}</div>
+        </form>
+        <p class='u-font-size-small u-mt-16'>{{t "Don't have an account yet?"}} <a href='/signup/' class='u-link'>{{t 'Sign Up'}}</a></p>
+      </div>
+    </div>
+  {{/if}}
+</div>

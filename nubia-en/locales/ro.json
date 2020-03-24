@@ -1,0 +1,66 @@
+{
+  "Loading": "Se încarcă",
+  "More Posts": "Mai multe articole",
+
+  "Recent Posts": "Articole recente",
+  "Featured Post": "Articol recomandat",
+  "Page Not Found": "Pagina nu a fost găsită",
+  "Comments": "Comentarii",
+  "You might also like": "Ar mai putea să îți placă",
+  "Authors": "Autori",
+  "Navigation": "Navigare",
+  "Newsletter": "Newsletter",
+  "Advertise": "Promovează",
+  "Tags": "Tag-uri",
+  "1 min read": "lectură de 1 min",
+  "% min read": "lectură de % min",
+  "Published with {ghostLink}": "Publicat cu {ghostLink}",
+
+  "Share on Twitter": "Trimite pe Twitter",
+  "Share on Facebook": "Trimite pe Facebook",
+  "Share on LinkedIn": "Trimite pe LinkedIn",
+  "Share on Pinterest": "Trimite pe Pinterest",
+  "Share via Email": "Trimite pe Email",
+  "Copy link": "Copiază adresa",
+  "Link copied to clipboard": "Adresa copiată în clipboard",
+
+  "Search": "Caută",
+  "Search {siteTitle}": "Caută în {siteTitle}",
+  "Type to Search": "Scrie aici pentru a căuta",
+
+  "Log In": "Conectează-te",
+  "Sign Up": "Înregistrează-te",
+  "Continue": "Continuă",
+  "Subscribe": "Abonează-te",
+  "Subscribe Now": "Abonează-te Now",
+  "Your email ": "Email-ul tău",
+  "Please check your inbox and click the link to confirm your subscription.": "Te rog verifică-ți emailul si fă clic pe link pentru a-ți confirma abonarea",
+  "Please enter a valid email address!": "Te rog introdu o adresă validă de email!",
+  "An error occurred, please try again later.": "O eroare a avut loc, te rog încearcă din nou mai târziu.",
+
+  "You've successfully subscribed to {siteTitle}": "Te-ai abonat cu succes la {siteTitle}",
+  "Great! Next, complete checkout for full access to {siteTitle}": "Excelent! Completează procedura de checkout pentru a avea acces complet la {siteTitle}",
+  "Welcome back! You've successfully signed in.": "Bine ai revenit! Te-ai reconectat cu succes.",
+  "Success! Your account is fully activated, you now have access to all content.": "Success! Your account is fully activated, you now have access to all content.",
+
+  "Already have an account?": "Ai deja un cont?",
+  "Don't have an account yet?": "Nu ai încă un cont?",
+
+  "This post is for paying subscribers only": "Acest articol este doar pentru membrii plătitori",
+  "This post is for subscribers only": "Acest articol este doar pentru membri",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Înscrie-te la newsletter pentru a primi ultimele articole pe email.",
+
+  "Choose your subscription": "Alege tipul de abonament",
+  "Unlock full access to {siteTitle} and see the entire library of members-only content & updates.": "Deblochează accesul la {siteTitle} și ai acces la întreaga colecție de conținut disponibilă membrilor.",
+  "Sign Up to {siteTitle}": "Înregistrează-te la {siteTitle}",
+
+  "Welcome back!": "Bine ai revenit!",
+  "Log Into your account again.": "Conectează-te din nou.",
+  "Send login link": "Trimite link-ul de conectare",
+
+  "Nice, you're a subscriber!": "Super, ai devenit membru!",
+  "You have an active {siteTitle} account with access to all posts.": "Ai un cont activ la {siteTitle} cu acces la toate articolele.",
+  "You're a subscriber to free members updates": "Esti un membru cu acces la articolele gratuite.",
+  "You are subscribed to free updates from {siteTitle}, but don't have a paid subscription to read all the posts.": "Te-ai înregistrat să primești notificări gratuite de la {siteTitle}, dar nu ai un abonament plătit pentru a citi toate articolele."
+}

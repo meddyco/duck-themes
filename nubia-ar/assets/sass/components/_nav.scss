@@ -1,0 +1,74 @@
+/*------------------------------------*\
+  Components > Site Navigation
+\*------------------------------------*/
+
+.c-nav {
+  @include mq($from: tablet) {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    line-height: 1;
+    background-color: $bg-color;
+    padding: 0px double($base-spacing-unit);
+
+    &-wrap {
+      text-align: center;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: $color-border;
+        width: 100%;
+        top: 50%;
+        left: 0px;
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    font-size: $font-size-small;
+    letter-spacing: 228px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      @include mq($from: tablet) {
+        margin-right: half($base-spacing-unit);
+      }
+
+      @include mq($from: desktop) {
+        margin-right: $base-spacing-unit;
+      }
+    }
+
+    @include mq($from: tablet) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: block;
+    transition: $global-transition;
+
+    @include mq($until: tablet) {
+      padding: quarter($base-spacing-unit) 0;
+    }
+
+    &--current {
+      color: $color-brand;
+
+      .home-template &:not(:hover) {
+        color: $color-link;
+      }
+    }
+
+    @include attention() {
+      color: $color-brand;
+    }
+  }
+
+  &__icon {
+    vertical-align: middle;
+  }
+}

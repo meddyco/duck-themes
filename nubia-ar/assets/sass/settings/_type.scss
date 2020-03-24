@@ -1,0 +1,22 @@
+// *----------------------------------*\
+//  Settings > Type
+// *----------------------------------*/
+
+$font-serif:     'Playfair Display', serif;
+$font-sans-serif: Rubik, Helvetica, Arial, sans-serif;
+$font-monospace:  Courier, monospace;
+
+$font-size-base:   19px;
+$font-size-medium: 16px;
+$font-size-small:  14px;
+$font-size-tiny:   12px;
+
+$font-weight-light:   300;
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-bold:    700;
+
+$line-height-base:   round($font-size-base   *  1.7);
+$line-height-medium: round($font-size-medium * 1.55);
+$line-height-small:  round($font-size-small  * 1.55);
+$line-height-tiny:   round($font-size-tiny   * 1.55);

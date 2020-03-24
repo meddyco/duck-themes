@@ -1,0 +1,84 @@
+/*------------------------------------*\
+  Components > Member Plan
+\*------------------------------------*/
+
+@include mq($from: tablet) {
+  .c-member-plans {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .c-member-plan {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-member-plan + .c-member-plan {
+    margin-left: double($base-spacing-unit);
+  }
+}
+
+.c-member-plan {
+  padding: double($base-spacing-unit);
+  margin-bottom: double($base-spacing-unit);
+  background-color: $bg-color;
+  border-radius: double($global-border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+}
+
+.c-member-plan__header {
+  position: relative;
+  padding-bottom: double($base-spacing-unit);
+  color: $color-gray;
+  text-align: center;
+}
+
+.c-member-plan__title {
+  margin-bottom: ($base-spacing-unit + half($base-spacing-unit));
+  color: $color-text;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: $global-letter-spacing;
+}
+
+.c-member-plan__amount {
+  color: $color-text;
+  font-size: $font-size-h2;
+}
+
+.c-member-plan__content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.c-member-plan__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: double($base-spacing-unit);
+  list-style: none;
+}
+
+.c-member-plan__list li {
+  position: relative;
+  margin: 0;
+  font-size: $font-size-small;
+  padding: 0 0 $base-spacing-unit ($base-spacing-unit + half($base-spacing-unit));
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.c-member-plan__list li:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  font-size: $font-size-tiny;
+  font-weight: $font-weight-bold;
+  color: $color-brand;
+  content: '✓';
+}

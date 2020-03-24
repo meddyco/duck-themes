@@ -1,0 +1,82 @@
+/*------------------------------------*\
+  Components > Buttons
+\*------------------------------------*/
+
+.c-btn {
+  display: inline-block;
+  padding: $base-spacing-unit double($base-spacing-unit);
+  border-radius: 0;
+
+  cursor: pointer;
+  transition: half($global-transition);
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: none;
+  line-height: initial;
+  border: none;
+  background-color: $btn-bg;
+  font-size: $font-size-medium;
+  font-family: $font-sans-serif;
+  border: 1px solid $btn-border-color;
+  font-size: $font-size-small;
+  letter-spacing: $global-letter-spacing;
+
+  @include attention() {
+    color: $btn-color-hover;
+    text-decoration: none;
+    background-color: $btn-bg-hover;
+    border-color: $btn-border-color-hover;
+  }
+
+  &--active {
+    color: $btn-active-color;
+    background-color: $btn-active-bg;
+    border-color: $btn-active-border-color;
+    text-decoration: none;
+
+    @include attention() {
+      opacity: .9;
+      border-color: $btn-active-border-color;
+    }
+  }
+
+  &--disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    border-color: $color-gray;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--small {
+    padding: (half($base-spacing-unit) + quarter($base-spacing-unit)) ($base-spacing-unit + half($base-spacing-unit));
+  }
+
+  &--loading {
+    position: relative;
+    padding-right: triple($base-spacing-unit);
+
+    @-webkit-keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    &:after {
+      position: absolute;
+      top: $base-spacing-unit;
+      right: $base-spacing-unit;
+      content: '';
+      display: block;
+      height: $base-spacing-unit;
+      width: $base-spacing-unit;
+      border: 2px solid $color-white;
+      border-radius: 100%;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      animation: spin 500ms infinite linear;
+    }
+  }
+}
