@@ -5,6 +5,33 @@
 {{> post-hero }}
 
 <div class='o-wrapper'>
+  <script> 
+    function addLove() {
+      var xhttp = new XMLHttpRequest();
+
+      xhttp.open("POST", "http://127.0.0.1:3000/update-post-reactions", true);
+      xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhttp.onreadystatechange = function() {//Call a function when the state changes.
+        if(xhttp.readyState == 4 && xhttp.status == 200) {
+            document.getElementById("love").innerHTML =
+            JSON.parse(this.responseText)[0]["love"];
+        }
+      }
+      xhttp.send("post=awesome post&reaction=love");
+    }
+    function getLove() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "http://127.0.0.1:3000/get-post-reactions", true);
+      xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhttp.onreadystatechange = function() {//Call a function when the state changes.
+        if(xhttp.readyState == 4 && xhttp.status == 200) {
+            document.getElementById("love").innerHTML =
+            JSON.parse(this.responseText)[0]["love"];
+        }
+      }
+      xhttp.send("post=awesome post");
+    }
+  </script>
   <div class='o-grid'>
     <div class='o-grid__col o-grid__col--2-3-m'>
       <article class='c-{{ post_class }}'>
@@ -26,14 +53,14 @@
             {{> share }}
           </div>
         </div>
-
         <hr>
 
         {{> disqus}}
       {{else}}
         {{> post-upgrade-cta }}
       {{/if}}
-
+       <button id="loveBtn" type="input" onclick="addLove()">love</button>
+       <div id="love" onload="getLove()">love count</div>
       </article>
 
     </div>
@@ -48,3 +75,4 @@
 </div>
 
 {{> related-posts}}
+
