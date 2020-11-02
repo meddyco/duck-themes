@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{#post}}
+
+{{> post-hero }}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--3-4-m o-grid__col--2-3-l'>
+      <article class='c-{{ post_class }} is-page'>
+
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</div>
+
+{{/post}}

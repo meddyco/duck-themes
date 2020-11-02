@@ -1,0 +1,52 @@
+<footer class='c-footer'>
+  <div class='o-grid'>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m {{#unless @labs.members}} o-grid__col--2-4-l {{/unless}} {{#if @labs.members}} o-grid__col--1-3-l {{/if}}'>
+      <p class='u-font-size-medium u-font-weight-medium'>{{t 'Tags' }}</p>
+
+      {{#get 'tags' limit='all'}}
+        <ul class='c-footer-list o-plain-list'>
+          {{#foreach tags}}
+            <li><a href='{{ url }}'>{{ name }}</a></li>
+          {{/foreach}}
+        </ul>
+      {{/get}}
+    </div>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m {{#unless @labs.members}} o-grid__col--2-4-l {{/unless}} {{#if @labs.members}} o-grid__col--1-3-l {{/if}}'>
+      <p class='u-font-size-medium u-font-weight-medium'>{{t 'Navigation' }}</p>
+
+      <ul class='c-footer-list o-plain-list'>
+        {{ navigation }}
+      </ul>
+    </div>
+
+    {{#if @labs.members}}
+      {{#unless @member}}
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+        <p class='u-font-size-medium u-font-weight-medium'>{{t 'Newsletter' }}</p>
+        {{> subscribe-form}}
+      </div>
+      {{/unless}}
+    {{/if}}
+
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-footer__bottom'>
+        <div class='o-grid'>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            <div class='u-font-size-tiny c-footer__copyright'>
+              &copy; {{ date format='YYYY' }} {{ @site.title }} - {{{t "Published with {ghostlink}" ghostlink="<a href=\"https://ghost.org\">Ghost</a>" }}}
+            </div>
+          </div>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            {{> social-icons }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>

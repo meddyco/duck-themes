@@ -1,0 +1,109 @@
+/*------------------------------------*\
+  Components > Teaser
+\*------------------------------------*/
+
+.c-teaser {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  padding-left: $base-spacing-unit;
+  padding-top: $base-spacing-unit;
+
+  @include mq(tablet, desktop) {
+    display: block;
+    padding-left: 0;
+    line-height: inherit;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: $base-spacing-unit;
+    border-bottom: 1px solid $color-border;
+
+    @include mq(tablet, desktop) {
+      padding-top: half($base-spacing-unit);
+      padding-bottom: half($base-spacing-unit) + $base-spacing-unit;
+    }
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &:before {
+    counter-increment: widget;
+    content: counter(widget) '. ';
+    position: relative;
+    left: - $base-spacing-unit;
+    line-height: 1;
+    font-size: $font-size-base;
+    font-style: italic;
+    font-family: $font-serif;
+    color: $color-brand;
+
+    @include mq(tablet, desktop) {
+      left: 0;
+    }
+  }
+
+  &__media {
+    margin-left: $base-spacing-unit;
+    background-color: $bg-gray;
+
+    @include mq(tablet, desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    display: block;
+    width: quadruple($base-spacing-unit);
+    height: triple($base-spacing-unit);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $bg-gray;
+    transition: all $global-transition ease-in-out;
+
+    .js-enabled &.js-fadein {
+      opacity: 0;
+    }
+
+    .js-enabled &.is-inview {
+      opacity: 1;
+    }
+
+    @include mq(tablet, desktop) {
+      width: 100%;
+      height: 100%;
+
+      &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-bottom: 75%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: half($base-spacing-unit);
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+
+    @include mq(tablet, desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__date {
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+  }
+}

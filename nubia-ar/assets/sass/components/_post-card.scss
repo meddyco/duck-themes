@@ -1,0 +1,214 @@
+/*------------------------------------*\
+  Components > Post Card
+\*------------------------------------*/
+
+.c-post-card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: double($base-spacing-unit);
+
+  &-wrap {
+    display: flex;
+  }
+
+  &--raw {
+    justify-content: center;
+    background-color: $bg-gray;
+    padding: double($base-spacing-unit) + half($base-spacing-unit);
+
+    .c-post-card__content {
+      flex-grow: unset;
+    }
+
+    .c-post-card__tags {
+      margin-top: 0;
+    }
+
+    .c-post-card__share {
+      top: - quarter($base-spacing-unit);
+    }
+  }
+
+  &__media {
+    overflow: hidden;
+    background-color: $bg-gray;
+  }
+
+  &__image-wrap {
+    display: block;
+    position: relative;
+    padding-top: 75%;
+
+    // Home Page First Post Card
+    .home-template .c-post-card-wrap:nth-of-type(1) .c-post-card & {
+      @include mq($from: desktop) {
+        padding-top: calc(60% - 32px);
+      }
+    }
+
+    .home-template .c-post-card-wrap:nth-of-type(2) .c-post-card & {
+      @include mq($from: desktop) {
+        padding-top: calc(125.2% - 32px);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    transition: all $global-transition ease;
+
+    .js-enabled &.js-fadein {
+      opacity: 0;
+    }
+
+    .js-enabled &.is-inview {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__tags {
+    float: left;
+    padding-left: half($base-spacing-unit);
+    margin-top: $base-spacing-unit + quarter($base-spacing-unit);
+    margin-bottom: half($base-spacing-unit) + quarter($base-spacing-unit) + half(quarter($base-spacing-unit));
+    border-left: 2px solid $color-brand;
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+
+    a {
+      text-transform: uppercase;
+      color: $color-gray;
+      margin-right: quarter($base-spacing-unit);
+      margin-left: quarter($base-spacing-unit);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include attention() {
+        color: $color-text;
+      }
+    }
+  }
+
+  &__share {
+    float: right;
+    position: relative;
+    top: $base-spacing-unit - half(quarter($base-spacing-unit));
+    right: - quarter($base-spacing-unit);
+    opacity: 0;
+    transition: all $global-transition ease-in-out;
+  }
+
+  &__share-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+  }
+
+  &__share-icon-twitter {
+    fill: $color-twitter;
+  }
+
+  &__share-icon-facebook {
+    fill: $color-facebook;
+  }
+
+  &__share-icon-linkedin {
+    fill:$color-linkedin;
+  }
+
+  &__share-icon-pinterest {
+    fill: $color-pinterest;
+  }
+
+  &__title-link {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $global-transition ease-in-out;
+  }
+
+  &__title {
+    clear: both;
+    margin-bottom: $base-spacing-unit - half(quarter($base-spacing-unit));
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    transition: $global-transition;
+  }
+
+  &__excerpt {
+    display: none;
+    margin-bottom: 0;
+    color: $color-gray;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+  }
+
+  &__meta {
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+  }
+
+  &__author {
+    display: inline-block;
+
+    a {
+      color: $color-gray;
+
+      @include attention() {
+        color: $color-text;
+      }
+    }
+
+    &:before {
+      content: '/';
+      display: inline-block;
+      padding-left: quarter($base-spacing-unit);
+      margin-right: half($base-spacing-unit);
+    }
+  }
+
+  &--featured {
+    &__icon {
+      position: absolute;
+      bottom: $base-spacing-unit;
+      left: $base-spacing-unit;
+      fill: $color-white;
+      background-color: rgba($color-black, .05);
+    }
+  }
+
+  @include attention() {
+    .c-post-card__image {
+      transform: scale(1.01);
+    }
+
+    .c-post-card__image:before {
+      opacity: .1;
+    }
+
+    .c-post-card__share {
+      opacity: 1;
+    }
+
+    .c-post-card__title-link {
+      color: $color-text;
+      border-bottom: 1px solid $color-brand;
+    }
+  }
+}

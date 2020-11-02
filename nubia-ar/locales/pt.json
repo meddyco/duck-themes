@@ -1,0 +1,66 @@
+{
+  "Loading": "Carregando",
+  "More Posts": "Mais mensagens",
+
+  "Recent Posts": "Postagens recentes",
+  "Featured Post": "Post em destaque",
+  "Page Not Found": "Página não encontrada",
+  "Load Comments": "Comentários",
+  "You might also like": "Você pode estar interessado em",
+  "Authors": "Autores",
+  "Navigation": "Navegação",
+  "Newsletter": "Boletim de Notícias",
+  "Advertise": "Anunciar",
+  "Tags": "Tag",
+  "1 min read": "1 minuto ler",
+  "% min read": "% minuto ler",
+  "Published with {ghostLink}": "Publicado com {ghostLink}",
+
+  "Share on Twitter": "Compartilhar no Twitter",
+  "Share on Facebook": "Compartilhar no Facebook",
+  "Share on LinkedIn": "Compartilhar no LinkedIn",
+  "Share on Pinterest": "Compartilhar no Pinterest",
+  "Share via Email": "Compartilhar via e-mail",
+  "Copy link": "Link de cópia",
+  "Link copied to clipboard": "Link copiado para a área de transferência",
+
+  "Search": "Pesquisa",
+  "Search {siteTitle}": "Pesquisa {siteTitle}",
+  "Type to Search": "Escreva para pesquisar",
+
+  "Log In": "Assinar em",
+  "Sign Up": "Inscrever-se",
+  "Continue": "Continuar",
+  "Subscribe": "Se inscrever",
+  "Subscribe Now": "Inscreva-se agora",
+  "Your email ": "Seu endereço de email",
+  "Please check your inbox and click the link to confirm your subscription.": "Verifique sua caixa de entrada e clique no link para confirmar sua assinatura.",
+  "Please enter a valid email address!": "Por favor insira um endereço de e-mail válido!",
+  "An error occurred, please try again later.": "Ocorreu um erro. Por favor tente novamente mais tarde.",
+
+  "You've successfully subscribed to {siteTitle}": "Você se inscreveu com sucesso em {siteTitle}",
+  "Great! Next, complete checkout for full access to {siteTitle}": "Ótimo! Em seguida, finalize a compra para ter acesso completo a {siteTitle}",
+  "Welcome back! You've successfully signed in.": "Bem vindo de volta! Você fez login com sucesso.",
+  "Success! Your account is fully activated, you now have access to all content.": "Sucesso! Sua conta está totalmente ativada, agora você tem acesso a todo o conteúdo.",
+
+  "Already have an account?": "já tem uma conta?",
+  "Don't have an account yet?": "Não tem uma conta ainda?",
+
+  "This post is for paying subscribers only": "Esta postagem é apenas para assinantes pagantes",
+  "Esta publicação é apenas para assinantes": "This post is for subscribers only",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Participe do boletim para receber as atualizações mais recentes em sua caixa de entrada.",
+
+  "Choose your subscription": "Escolha sua assinatura",
+  "Unlock full access to {siteTitle} and see the entire library of members-only content & updates.": "Desbloqueie o acesso total a {siteTitle} e veja toda a biblioteca de conteúdo e atualizações somente para membros.",
+  "Sign Up to {siteTitle}": "Inscreva-se em {siteTitle}",
+
+  "Welcome back!": "Bem vindo de volta!",
+  "Log Into your account again.": "Faça login na sua conta novamente.",
+  "Send login link": "Enviar link de login",
+
+  "Nice, you're a subscriber!": "Legal, você é um assinante!",
+  "You have an active {siteTitle} account with access to all posts.": "Você tem uma conta ativa do {siteTitle} com acesso a todas as postagens.",
+  "You're a subscriber to free members updates": "Você é assinante de atualizações gratuitas para membros",
+  "You are subscribed to free updates from {siteTitle}, but don't have a paid subscription to read all the posts.": "Você se inscreveu para receber atualizações gratuitas em {siteTitle}, mas não possui uma assinatura paga para ler todas as postagens."
+}

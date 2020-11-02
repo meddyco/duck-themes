@@ -1,0 +1,65 @@
+/*------------------------------------*\
+  Components > Notifications
+\*------------------------------------*/
+
+.c-notification  {
+  position: fixed;
+  top: $base-spacing-unit;
+  right: $base-spacing-unit;
+  left: $base-spacing-unit;
+  z-index: 9000;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: $base-spacing-unit double($base-spacing-unit) $base-spacing-unit $base-spacing-unit;
+  color: $color-white;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-tiny;
+  line-height: $line-height-tiny;
+  background-color: $color-success;
+  transition: all $global-transition cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  transform: translateY(-175%);
+  visibility: hidden;
+}
+
+.signup-success    .c-notification--signup,
+.signin-success    .c-notification--signin,
+.checkout-success  .c-notification--checkout,
+.subscribe-success .c-notification--subscribe {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.c-notification.closed {
+  visibility: hidden;
+  transition: all double($global-transition) cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(-175%);
+}
+
+.c-notification__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: $base-spacing-unit;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: $color-white;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+   &:after {
+    transform: rotate(-45deg);
+  }
+}
