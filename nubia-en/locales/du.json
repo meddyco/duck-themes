@@ -1,0 +1,66 @@
+{
+  "Loading": "het laden",
+  "More Posts": "Meer berichten",
+
+  "Recent Posts": "recente berichten",
+  "Featured Post": "Aanbevolen bericht",
+  "Page Not Found": "Pagina niet gevonden",
+  "Load Comments": "Comments",
+  "You might also like": "U zou geïnteresseerd kunnen zijn in",
+  "Authors": "auteurs",
+  "Navigation": "Navigatie",
+  "Newsletter": "Nieuwsbrief",
+  "Advertise": "Adverteren",
+  "Tags": "Tags",
+  "1 min read": "1 minuut lezen",
+  "% min read": "% minuut lezen",
+  "Published with {ghostLink}": "Gepubliceerd met {ghostLink}",
+
+  "Share on Twitter": "Delen op Twitter",
+  "Share on Facebook": "Delen op Facebook",
+  "Share on LinkedIn": "Delen op LinkedIn",
+  "Share on Pinterest": "Delen op Pinterest",
+  "Share via Email": "Deel via E-mail",
+  "Copy link": "Kopieer link",
+  "Link copied to clipboard": "Link gekopieerd naar klembord",
+
+  "Search": "Zoeken",
+  "Search {siteTitle}": "Zoeken {siteTitle}",
+  "Type to Search": "Type om te zoeken",
+
+  "Log In": "Aanmelden",
+  "Sign Up": "Aanmelden",
+  "Continue": "Doorgaan met",
+  "Subscribe": "abonneren",
+  "Subscribe Now": "Abonneer nu",
+  "Your email ": "jouw e-mailadres",
+  "Please check your inbox and click the link to confirm your subscription.": "Controleer je inbox en klik op de link om je abonnement te bevestigen.",
+  "Please enter a valid email address!": "Gelieve een geldig e-mailadres in te geven!",
+  "An error occurred, please try again later.": "Er is een fout opgetreden, probeer het later opnieuw.",
+
+  "You've successfully subscribed to {siteTitle}": "U bent succesvol geabonneerd op {siteTitle}",
+  "Great! Next, complete checkout for full access to {siteTitle}": "Super goed! Voltooi vervolgens het afrekenen voor volledige toegang tot {siteTitle}",
+  "Welcome back! You've successfully signed in.": "Welkom terug! U bent succesvol aangemeld.",
+  "Success! Your account is fully activated, you now have access to all content.": "Succes! Uw account is volledig geactiveerd, u hebt nu toegang tot alle inhoud.",
+
+  "Already have an account?": "Heb je al een account?",
+  "Don't have an account yet?": "Heb je nog geen account?",
+
+  "This post is for paying subscribers only": "Dit bericht is alleen voor betalende abonnees",
+  "This post is for subscribers only": "Dit bericht is alleen voor abonnees",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Word lid van de nieuwsbrief om de laatste updates in uw inbox te ontvangen.",
+
+  "Choose your subscription": "Kies uw abonnement",
+  "Unlock full access to {siteTitle} and see the entire library of members-only content & updates.": "Ontgrendel volledige toegang tot {siteTitle} en bekijk de volledige bibliotheek met alleen leden-inhoud en updates.",
+  "Sign Up to {siteTitle}": "Aanmelden voor {siteTitle}",
+
+  "Welcome back!": "Welkom terug!",
+  "Log Into your account again.": "Meld u opnieuw aan bij uw account.",
+  "Send login link": "Verzend login link",
+
+  "Nice, you're a subscriber!": "Leuk, je bent een abonnee!",
+  "You have an active {siteTitle} account with access to all posts.": "Je hebt een actief {siteTitle} -account met toegang tot alle berichten.",
+  "You're a subscriber to free members updates": "U bent geabonneerd op gratis ledenupdates",
+  "You are subscribed to free updates from {siteTitle}, but don't have a paid subscription to read all the posts.": "Je bent geabonneerd op gratis updates van {siteTitle}, maar je hebt geen betaald abonnement om alle berichten te lezen."
+}

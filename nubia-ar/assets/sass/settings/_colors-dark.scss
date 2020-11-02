@@ -1,0 +1,60 @@
+// *----------------------------------*\
+//  Settings > Colors
+// *----------------------------------*/
+
+// Colors
+$color-brand:   #FFFFFF;
+$color-white:   #FFFFFF;
+$color-black:   #000000;
+$color-text:    #FFFFFF;
+$color-gray:    #738a94;
+$color-error:   #BF3157;
+$color-success: #097756;
+
+
+// Background Colors
+$bg-color:        #263238;
+$bg-gray:         #212A2E;
+$bg-gray-dark:    $color-gray;
+$bg-white:        $color-white;
+$bg-dark-opacity: rgba($color-black, .1);
+
+
+// Border
+$color-border: #333f44;
+
+
+// Links
+$color-link: $color-text;
+
+
+// Buttons
+$btn-bg:       $color-brand;
+$btn-bg-hover: $color-brand;
+
+$btn-color:       $color-gray;
+$btn-color-hover: $color-gray;
+
+$btn-border-color:       $color-brand;
+$btn-border-color-hover: $color-brand;
+
+$btn-active-bg:    $bg-gray;
+$btn-active-color: $color-white;
+$btn-active-border-color: $color-border;
+
+
+// Social
+$bg-twitter:   #1DA1F2;
+$bg-facebook:  #3B5998;
+$bg-linkedin:  #0077B5;
+$bg-pinterest: #BD081C;
+$bg-clipboard: #44bd32;
+
+$color-twitter:   #FFFFFF;
+$color-facebook:  #FFFFFF;
+$color-linkedin:  #FFFFFF;
+$color-pinterest: #FFFFFF;
+
+
+// Footer
+$color-footer-top-border: $color-border;

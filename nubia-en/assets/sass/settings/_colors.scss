@@ -1,0 +1,60 @@
+// *----------------------------------*\
+//  Settings > Colors
+// *----------------------------------*/
+
+// Colors
+$color-brand:   #B70038 !default;
+$color-white:   #FFFFFF !default;
+$color-black:   #000000 !default;
+$color-text:    #222222 !default;
+$color-gray:    #5D738D !default;
+$color-error:   #BF3157 !default;
+$color-success: #097756 !default;
+
+
+// Background Colors
+$bg-color:        $color-white !default;
+$bg-gray:         #F4F6F8 !default;
+$bg-gray-dark:    $color-gray !default;
+$bg-white:        $color-white !default;
+$bg-dark-opacity: rgba($color-black, .1) !default;
+
+
+// Border
+$color-border: #ECF0F1 !default;
+
+
+// Links
+$color-link: $color-text;
+
+
+// Buttons
+$btn-bg:       $color-white !default;
+$btn-bg-hover: $color-brand !default;
+
+$btn-color:       $color-gray !default;
+$btn-color-hover: $color-white !default;
+
+$btn-border-color:       $color-black !default;
+$btn-border-color-hover: $color-brand !default;
+
+$btn-active-bg:    $color-brand !default;
+$btn-active-color: $color-white !default;
+$btn-active-border-color: $color-brand !default;
+
+
+// Social
+$bg-twitter:   #1DA1F2 !default;
+$bg-facebook:  #3B5998 !default;
+$bg-linkedin:  #0077B5 !default;
+$bg-pinterest: #BD081C !default;
+$bg-clipboard: #44bd32 !default;
+
+$color-twitter:   #1DA1F2 !default;
+$color-facebook:  #3B5998 !default;
+$color-linkedin:  #0077B5 !default;
+$color-pinterest: #BD081C !default;
+
+
+// Footer
+$color-footer-top-border: $color-white !default;

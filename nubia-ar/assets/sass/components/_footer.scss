@@ -1,0 +1,68 @@
+/*------------------------------------*\
+  Components > Footer
+\*------------------------------------*/
+
+.c-footer {
+  margin-top: double($base-spacing-unit);
+  padding: double($base-spacing-unit) 0 double($base-spacing-unit) 0;
+  border-top: half(quarter($base-spacing-unit)) solid $color-footer-top-border;
+  background-color: $bg-gray;
+
+  @include mq($from: desktop) {
+    padding: (quadruple($base-spacing-unit) + $base-spacing-unit) 0 $base-spacing-unit 0;
+  }
+
+  &__bottom {
+    margin-top: $base-spacing-unit;
+    padding-top: double($base-spacing-unit);
+    border-top: 1px solid $color-border;
+  }
+
+  &__copyright {
+    color: $color-gray;
+
+    a {
+      color: $color-gray;
+
+      @include attention() {
+        color: $color-brand;
+      }
+    }
+
+    @include mq($until: tablet) {
+      text-align: center;
+      margin-bottom: half($base-spacing-unit);
+    }
+  }
+}
+
+.c-footer-list {
+  margin-bottom: $base-spacing-unit;
+
+  li {
+    display: block;
+    margin: 0;
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+
+  a {
+    display: block;
+    padding: 0;
+    font-size: $font-size-small;
+
+    @include attention() {
+      color: $color-brand;
+
+      .icon {
+        fill: $color-brand;
+      }
+    }
+  }
+
+  .icon {
+    fill: $color-gray;
+    vertical-align: middle;
+    transition: $global-transition;
+  }
+}

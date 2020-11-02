@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='{{ @site.lang }}'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <title>{{ meta_title }}</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  {{> compiled/inline-css }}
+
+  <script>
+    var site_url                            = '{{@site.url}}',
+        pagination_next_page_number         = '{{ pagination.next }}',
+        pagination_available_pages_number   = '{{ pagination.pages }}',
+        pagination_loading_text             = '{{t "Loading" }}',
+        pagination_more_posts_text          = '{{t "More Posts" }}',
+        clipboard_copied_text               = '{{t "Link copied to clipboard" }}';
+  </script>
+
+  {{ ghost_head }}
+</head>
+<body class='{{ body_class }}'>
+
+  <div class='js-off-canvas-container c-off-canvas-container'>
+    {{> notifications }}
+
+    {{> header }}
+
+    {{{ body }}}
+
+    {{> footer}}
+  </div>
+
+  <script src='{{ asset 'js/app.min.js' }}'></script>
+  {{ ghost_foot }}
+</body>
+</html>

@@ -1,0 +1,23 @@
+// *----------------------------------*\
+// Tools > Functions
+// *----------------------------------*/
+
+@function half($n) {
+  @return round($n / 2);
+}
+
+@function quarter($n) {
+  @return round($n / 4);
+}
+
+@function double($n) {
+  @return round($n * 2);
+}
+
+@function triple($n) {
+  @return round($n * 3);
+}
+
+@function quadruple($n) {
+  @return round($n * 4);
+}

@@ -1,0 +1,16 @@
+<!--
+  Get related posts based on tags
+-->
+
+{{#get 'posts' limit='3' include='tags,authors' filter='tags:[{{post.tags}}]+id:-{{post.id}}' as |related-posts|}}
+  {{#if related-posts}}
+    <div class='c-related'>
+      <div class='o-grid'>
+        <div class='o-grid__col o-grid__col--full'>
+          <h3 class='c-related__title'>{{t 'You Might Be Interested In' }}</h3>
+        </div>
+        {{> loop }}
+      </div>
+    </div>
+  {{/if}}
+{{/get}}

@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  Components > Widget
+\*------------------------------------*/
+
+.c-widget {
+  padding: double($base-spacing-unit);
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  counter-reset: widget;
+
+  @include mq($until: tablet) {
+    padding: double($base-spacing-unit);
+    border-right: 1px solid $color-border;
+  }
+
+  &:first-child {
+    @include mq($until: tablet) {
+      border-top: 1px solid $color-border;
+    }
+  }
+
+  &__title {
+    padding-left: half($base-spacing-unit);
+    margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+    line-height: 1;
+    letter-spacing: $global-letter-spacing;
+    border-left: 2px solid $color-brand;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+  }
+}

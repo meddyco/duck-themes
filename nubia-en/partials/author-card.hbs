@@ -1,0 +1,56 @@
+<div class='o-grid__col o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--2-4-l c-author-card-wrap'>
+  <div class='c-author-card'>
+    {{#if profile_image}}
+      <div class='c-author-card__media'>
+        <a href='/author/{{ slug }}' aria-hidden='true' tabindex='-1'>
+          <img src='{{ profile_image }}' alt='{{ name }}' class='c-author__image' role='presentation'>
+        </a>
+      </div>
+    {{/if}}
+
+    <div class='c-author-card__content'>
+      <h3 class='c-author-card__title'><a href='/author/{{ slug }}'>{{ name }}</a></h3>
+
+      {{#if bio}}
+        <p class='c-author-card__bio'>{{ bio }}</p>
+      {{/if}}
+
+      <ul class='c-author-card-links'>
+        {{#if twitter}}
+          <li class='c-author-card-links-item'>
+            <a href='{{ twitter_url }}' aria-label='Twitter' target='_blank' rel='noopener'>
+              <span class='c-author-card-links-icon' data-icon='ei-sc-twitter' data-size='s'></span>
+            </a>
+          </li>
+        {{/if}}
+
+        {{#if facebook}}
+          <li class='c-author-card-links-item'>
+            <a href='{{ facebook_url }}' aria-label='Facebook' target='_blank' rel='noopener'>
+              <span class='c-author-card-links-icon' data-icon='ei-sc-facebook' data-size='s'></span>
+            </a>
+          </li>
+        {{/if}}
+
+        {{#if website}}
+          <li class='c-author-card-links-item'>
+            <a href='{{ website }}' aria-label='Website' target='_blank' rel='noopener'>
+              <span class='c-author-card-links-icon' data-icon='ei-link' data-size='s'></span>
+            </a>
+          </li>
+        {{/if}}
+
+        {{#if location}}
+          <li class='c-author-card-links-item' aria-label='Location'>
+            <span class='c-author-card-links-icon' data-icon='ei-location' data-size='s'></span>{{ location }}
+          </li>
+        {{/if}}
+
+        <li class='c-author-card-links-item' aria-label='Posts'>
+          <span class='c-author-card-links-icon' data-icon='ei-chart' data-size='s'></span>
+          {{plural count.posts empty='No posts' singular='% post' plural='% posts'}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

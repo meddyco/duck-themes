@@ -1,0 +1,24 @@
+{{#post}}
+  {{#primary_author}}
+    <div class='c-widget c-widget-author'>
+
+      {{#if profile_image}}
+        <div class='c-widget-author__media'>
+          <a href='{{ url }}' aria-hidden='true' tabindex='-1'>
+            <img src='{{ profile_image }}' alt='{{ name }}' class='c-widget-author__image' role='presentation'>
+          </a>
+        </div>
+      {{/if}}
+
+      <div class='c-widget-author__content'>
+        <h3 class='c-widget-author__title'>
+          <a href='{{ url }}'>{{ name }}</a>
+        </h3>
+        {{#if bio}}
+          <p class='c-widget-author__bio'>{{ bio }}</p>
+        {{/if}}
+      </div>
+
+    </div>
+  {{/primary_author}}
+{{/post}}

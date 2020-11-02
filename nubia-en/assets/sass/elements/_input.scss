@@ -1,0 +1,40 @@
+/*------------------------------------*\
+  Elements > Inputs
+\*------------------------------------*/
+
+$input-collor-border: #DFE3E9;
+$input-collor-border-hover: $color-brand;
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+input[type='datetime'],
+input[type='datetime-local'],
+select,
+textarea {
+  width: 100%;
+  display: block;
+  padding: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit;
+  border: 1px solid $input-collor-border;
+  border-radius: 0;
+  outline: none;
+  line-height: initial;
+  background-color: $color-white;
+  font-size: $font-size-medium;
+  font-family: $font-sans-serif;
+  transition: $global-transition;
+
+  &:focus {
+    border-color: $input-collor-border-hover;
+  }
+}

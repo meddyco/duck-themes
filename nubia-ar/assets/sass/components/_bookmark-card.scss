@@ -1,0 +1,107 @@
+/*------------------------------------*\
+  Components > Bookmark Card
+\*------------------------------------*/
+
+.kg-bookmark-card {
+  width: 100%;
+}
+
+a.kg-bookmark-container {
+  display: flex;
+  min-height: 148px;
+  line-height: 1.5;
+  border-bottom: 0;
+  color: $color-text;
+  font-family: $font-sans-serif;
+  transition: $global-transition;
+  background-color: $bg-gray;
+  text-decoration: none !important;
+
+  @include attention() {
+    color: $color-brand;
+    background-color: $bg-gray;
+  }
+}
+
+.kg-bookmark-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  padding: $base-spacing-unit + half($base-spacing-unit);
+}
+
+.kg-bookmark-title {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+}
+
+.kg-bookmark-description {
+  display: -webkit-box;
+  color: $color-gray;
+  font-size: $font-size-tiny;
+  margin-top: half($base-spacing-unit);
+  max-height: 48px;
+  overflow-y: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.kg-bookmark-metadata {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-tiny;
+  color: $color-gray;
+  margin-top: half($base-spacing-unit);
+  flex-wrap: wrap;
+}
+
+.kg-bookmark-publisher {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 240px;
+}
+
+.kg-bookmark-icon {
+  width: $base-spacing-unit + half($base-spacing-unit);
+  height: $base-spacing-unit + half($base-spacing-unit);
+  margin-right: half($base-spacing-unit);
+}
+
+.kg-bookmark-author:after {
+  content: "•";
+  margin: 0 half($base-spacing-unit);
+}
+
+.kg-bookmark-thumbnail {
+  position: relative;
+  min-width: 33%;
+  max-height: 100%;
+}
+
+.kg-bookmark-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@include mq($until: tablet) {
+  .kg-bookmark-container {
+    flex-direction: column;
+  }
+
+  .kg-bookmark-thumbnail {
+    order: 1;
+    width: 100%;
+    min-height: 160px;
+  }
+
+  .kg-bookmark-content {
+    order: 2
+  }
+}

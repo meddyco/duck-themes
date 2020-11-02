@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  Trumps > Typography
+\*------------------------------------*/
+
+// Font Family
+.u-font-family-serif {
+  font-family: $font-serif;
+}
+
+.u-font-family-sans-serif {
+  font-family: $font-sans-serif;
+}
+
+// Font Size
+.u-font-size-medium  {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+.u-font-size-small {
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+}
+
+.u-font-size-tiny {
+  font-size: $font-size-tiny;
+  line-height: $line-height-tiny;
+}
+
+// Font Weight
+.u-font-weight-light {
+  font-weight: $font-weight-light;
+}
+
+.u-font-weight-regular {
+  font-weight: $font-weight-regular;
+}
+
+.u-font-weight-medium {
+  font-weight: $font-weight-medium;
+}
+
+.u-font-weight-bold {
+  font-weight: $font-weight-bold;
+}

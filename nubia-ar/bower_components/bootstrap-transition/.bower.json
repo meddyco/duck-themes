@@ -1,0 +1,40 @@
+{
+  "name": "bootstrap-transition",
+  "description": "transition.js file of bootstrap 3.3.7",
+  "keywords": [
+    "js",
+    "bootstrap",
+    "transition",
+    "bootstrap-transition",
+    "bootstrap transition",
+    "bootstrap",
+    "bootstrap carousel transition",
+    "bootsrap.js",
+    "transition.js",
+    "bootstrap.js",
+    "bootstrap3",
+    "bootstrap 3"
+  ],
+  "homepage": "https://github.com/AnupamKhosla/bootstrap-transition",
+  "license": "UNLICENSED",
+  "main": [
+    "scripts/transition.js"
+  ],
+  "ignore": [
+    "README.md"
+  ],
+  "dependencies": {
+    "bootstrap-css-only": "latest",
+    "jquery": "1.9.1 - 3"
+  },
+  "authors": "Anupam Khosla",
+  "_release": "f782d670a8",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f782d670a823b051ce46ec05f30db9a8e3ac4be6"
+  },
+  "_source": "https://github.com/AnupamKhosla/bootstrap-transition.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-transition"
+}

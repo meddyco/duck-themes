@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  Components > Dropcap
+\*------------------------------------*/
+
+// All posts edited or saved with the Koenig editor enabled are wrapped in an element with .kg-post
+// https://forum.ghost.org/t/koenig-editor-beta-release/1284
+
+.c-content,
+.kg-post {
+  > p:first-child {
+    &::first-letter {
+      float: left;
+      height: 42px;
+      margin-top: 12px;
+      margin-right: half($base-spacing-unit);
+      color: $color-brand;
+      font-size: 62px;
+      line-height: 42px;
+      font-style: normal;
+      font-weight: $font-weight-regular;
+    }
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}

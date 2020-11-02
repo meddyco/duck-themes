@@ -1,0 +1,51 @@
+{{!< ../default}}
+
+<div class='o-wrapper'>
+  {{#if @member.paid}}
+    {{!-- Logged in, paying member: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+
+  {{else if @member}}
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <div class='c-archive'>
+          <h2 class='c-archive__title'>{{t 'Choose your subscription'}}</h2>
+          <p class='c-archive__description'>{{t 'Unlock full access to {siteTitle} and see the entire library of members-only content & updates.' siteTitle=@site.title}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-m o-grid__col--3-4-l'>
+        {{> signup-plans }}
+      </div>
+    </div>
+
+  {{else}}
+  {{!-- Not logged in: Sign up --}}
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <div class='c-archive'>
+          <h2 class='c-archive__title'>{{t 'Sign Up to {siteTitle}' siteTitle=@site.title}}</h2>
+          <p class='c-archive__description u-hidden'></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <form data-members-form='signup' class='c-subscribe-form'>
+          <div class='form-group'>
+            <input type='email' class='c-subscribe-form__input' placeholder='{{t 'Your email ' }}' data-members-email autocomplete='false'>
+            <button type='submit' class='c-subscribe-form__btn c-btn c-btn--active c-btn--small c-btn--full'>{{t 'Continue' }}</button>
+          </div>
+
+          <div class='u-alert u-alert--success u-mt-8'>{{t 'Please check your inbox and click the link to confirm your subscription.' }}</div>
+          <div class='u-alert u-alert--invalid u-mt-8'>{{t 'Please enter a valid email address!' }}</div>
+          <div class='u-alert u-alert--error u-mt-8'>{{t 'An error occurred, please try again later.' }}</div>
+        </form>
+        <p class='u-font-size-small u-mt-16'>{{t 'Already have an account?' }} <a href='/signin/' class='u-link'>{{t 'Log In' }}</a></p>
+      </div>
+    </div>
+  {{/if}}
+</div>
