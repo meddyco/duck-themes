@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  Components > Related
+\*------------------------------------*/
+
+.c-related {
+  padding: double($base-spacing-unit) 0 0;
+  background-color: $bg-gray;
+  margin-bottom: - double($base-spacing-unit);
+
+  @include mq($from: desktop) {
+    padding: triple($base-spacing-unit) 0 double($base-spacing-unit) 0;
+  }
+
+  &__title {
+    padding-bottom: 0;
+    margin-bottom: double($base-spacing-unit);
+    text-align: center;
+    font-size: $font-size-base;
+    font-family: $font-serif;
+
+    @include mq($from: desktop) {
+      margin-bottom: triple($base-spacing-unit);
+      font-size: $font-size-h3;
+    }
+  }
+
+  .c-post-card {
+    padding: $base-spacing-unit;
+    background-color: $bg-color;
+    border: 1px solid $color-border;
+  }
+}

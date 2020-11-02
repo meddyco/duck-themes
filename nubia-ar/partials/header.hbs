@@ -1,0 +1,57 @@
+<header class='c-header'>
+
+  <div class='o-grid'>
+
+    <div class='o-grid__col o-grid__col--3-4-s o-grid__col--4-4-m'>
+      <div class='c-logo'>
+        {{#if @site.logo}}
+          <a href='{{ @site.url }}'>
+            <img class='c-logo__img' src='{{ @site.logo }}' alt='{{ @site.title }}'>
+          </a>
+        {{else}}
+          <h1><a class='c-logo__link' href='{{ @site.url }}'>{{ @site.title }}</a></h1>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class='o-grid__col o-grid__col--1-4-s o-grid__col--3-4-l o-grid__col--full'>
+      <div class='c-off-canvas-content js-off-canvas-content'>
+        <div class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
+          <span class='c-off-canvas-toggle__icon'></span>
+        </div>
+
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-l o-grid__col--full'>
+            <nav class='c-nav-wrap'>
+              <ul class='c-nav o-plain-list'>
+                {{ navigation }}
+                {{#if @labs.members}}
+                  {{#if @member}}
+                    <li class='c-nav__item'><a href='/account/' class='c-nav__link'>{{t 'Account' }}</a></li>
+                    <li class='c-nav__item'><a href='#signout' class='c-nav__link' data-members-signout>{{t 'Log Out' }}</a></li>
+                  {{else}}
+                    <li class='c-nav__item'><a href='/signin/'>{{t 'Log In' }}</a></li>
+                    <li class='c-nav__item'><a href='/signup/' class='u-font-weight-medium u-link'>{{t 'Sign Up' }}</a></li>
+                  {{/if}}
+                {{/if}}
+                <li class='c-nav__item'>
+                  <a class='toggle-search-button js-search-toggle' href='#' aria-label='{{t "Search" }}'>
+                    <span class='c-nav__icon' data-icon='ei-search' data-size='s'></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class='js-off-canvas-toggle c-off-canvas-toggle'>
+        <span class='c-off-canvas-toggle__icon'></span>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+{{> search-form }}

@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  Components > Koenig Gallery
+\*------------------------------------*/
+
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+
+  .is-page & {
+    width: 100vw;
+
+    @include mq($from: tablet) {
+      max-width: 75vw;
+    }
+
+    @include mq($from: desktop) {
+      max-width: $grid-width;
+      padding-right: $grid-gutter;
+      padding-left: $grid-gutter;
+    }
+  }
+}
+
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kg-gallery-row:not(:first-of-type) {
+  margin: $base-spacing-unit 0 0 0;
+}
+
+.kg-gallery-image:not(:first-of-type) {
+  margin: 0 0 0 $base-spacing-unit;
+}

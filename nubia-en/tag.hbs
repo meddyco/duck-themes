@@ -1,0 +1,28 @@
+{{!< default}}
+
+<div class='o-wrapper'>
+
+  {{#tag}}
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--full'>
+        <div class='c-archive'>
+          <h2 class='c-archive__title'>{{ name }}</h2>
+          {{#if description}}
+            <p class='c-archive__description'>
+              {{ description }}
+            </p>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  {{/tag}}
+
+  <div class='o-grid js-grid'>
+    {{> loop }}
+  </div>
+
+  <div class='o-grid'>
+    {{ pagination }}
+  </div>
+
+</div>

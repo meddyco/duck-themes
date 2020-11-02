@@ -1,0 +1,61 @@
+<ul class='c-share o-plain-list'>
+  <li class='c-share__item'>
+    <a class='c-share__link c-share__link--twitter'
+       title='{{t "Share on Twitter" }}'
+       aria-label='{{t "Share on Twitter" }}'
+       href="https://twitter.com/share?text={{ encode title }}&amp;url={{ url absolute='true' }}"
+       onclick="window.open(this.href, 'twitter-share', 'width=550, height=235'); return false;">
+      <span data-icon='ei-sc-twitter' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link c-share__link--facebook'
+       title='{{t "Share on Facebook" }}'
+       aria-label='{{t "Share on Facebook" }}'
+       href="https://www.facebook.com/sharer/sharer.php?u={{ url absolute='true' }}"
+       onclick="window.open(this.href, 'facebook-share', 'width=580, height=296'); return false;">
+      <span data-icon='ei-sc-facebook' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link  c-share__link--linkedin'
+      title='{{t "Share on LinkedIn" }}'
+      aria-label='{{t "Share on LinkedIn" }}'
+      href="https://www.linkedin.com/shareArticle?mini=true&url={{ url absolute='true' }}&title={{ encode title }}"
+      onclick="window.open(this.href, 'linkedin-share', 'width=580, height=296'); return false;">
+      <span data-icon='ei-sc-linkedin' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link c-share__link--pinterest'
+       title='{{t "Share on Pinterest" }}'
+       aria-label='{{t "Share on Pinterest" }}'
+       href="http://pinterest.com/pin/create/button/?url={{ url absolute='true' }}&media={{ @site.url }}{{ feature_image }}&description={{ encode title }}"
+       onclick="window.open(this.href, 'pinterest-share', 'width=580, height=296'); return false;">
+      <span data-icon='ei-sc-pinterest' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link c-share__link--email'
+       title='{{t "Share via Email" }}'
+       aria-label='{{t "Share via Email" }}'
+       href="mailto:?subject={{ encode title }}&body={{ url absolute='true' }}">
+      <span data-icon='ei-envelope' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link c-share__link--clipboard'
+       title='{{t "Copy link" }}'
+       aria-label='{{t "Copy link" }}'
+       href="#"
+       data-clipboard-text="{{ url absolute='true' }}"
+       onclick="return false;">
+      <span data-icon='ei-link' data-size='s' class='c-share__icon'></span>
+    </a>
+  </li>
+</ul>

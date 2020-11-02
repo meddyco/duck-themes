@@ -1,0 +1,112 @@
+/*------------------------------------*\
+  Components > Content
+\*------------------------------------*/
+
+.c-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  word-break: break-word;
+  margin-bottom: double($base-spacing-unit);
+
+  @include mq($until: tablet) {
+    img {
+      max-width: 100vw;
+      pointer-events: none;
+    }
+  }
+
+  a:not(.c-btn) {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+
+    @include attention() {
+      color: $color-brand;
+    }
+  }
+
+  .twitter-tweet {
+    width: auto !important;
+  }
+
+  .instagram-media {
+    min-width: 100% !important;
+  }
+
+  address,
+  h1, h2, h3, h4, h5, h6,
+  blockquote, p, pre,
+  dl, ol, ul,
+  hr,
+  form,
+  table,
+  fieldset,
+  .footnotes,
+  .cp_embed_wrapper {
+    min-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $font-weight-medium;
+    margin-bottom: half($base-spacing-unit);
+
+    &:not(:first-child) {
+      margin-top: double($base-spacing-unit);
+    }
+  }
+
+  dd,
+  ol,
+  ul {
+    // Target Safari Only
+    &:not(:root:root) {
+      -webkit-padding-start: half($base-spacing-unit);
+    }
+  }
+}
+
+// Koenig Editor
+
+.kg-embed-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.kg-card figcaption {
+  width: 100%;
+  text-align: center;
+  color: $color-gray;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  padding: half($base-spacing-unit) $base-spacing-unit 0 $base-spacing-unit;
+}
+
+// Koenig Images
+
+.is-page .c-content {
+  .kg-width-full .kg-image {
+    @include mq($from: tablet) {
+      max-width: 100vw;
+      pointer-events: none;
+    }
+  }
+
+  .kg-width-wide .kg-image {
+    @include mq($from: tablet) {
+      max-width: 75vw;
+    }
+
+    @include mq($from: desktop) {
+      max-width: $grid-width;
+      padding-right: $grid-gutter;
+      padding-left: $grid-gutter;
+    }
+  }
+}

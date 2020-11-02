@@ -1,0 +1,32 @@
+<div class='c-post-hero'>
+  <div class='o-grid'>
+    {{#if feature_image}}
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--2-3-l'>
+        <div class='c-post-hero__media'>
+          <img
+            alt="{{title}}"
+            class="c-post-hero__image js-fadein"
+            srcset="
+              {{img_url feature_image size="s"}} 380w,
+              {{img_url feature_image size="m"}} 600w,
+              {{img_url feature_image size="l"}} 1000w
+            "
+            src="{{img_url feature_image size="m"}}"
+          />
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="o-grid__col o-grid__col--4-4-s {{#if feature_image}} o-grid__col--1-3-l {{/if}} {{#unless feature_image}} o-grid__col--3-4-m o-grid__col--4-4-l o-grid__col--center {{/unless}}">
+      <div class="c-post-hero__content {{#unless feature_image}} c-post-hero__content--raw {{/unless}}">
+        <h1 class='c-post-hero__title'>{{ title }}</h1>
+        {{#is 'post'}}
+        <div class='c-post-hero__meta'>
+          <time datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD.MMM.YYYY' }}</time> .
+          <span>{{ reading_time minute=(t '1 min read') minutes=(t '% min read') }}</span>
+        </div>
+        {{/is}}
+      </div>
+    </div>
+  </div>
+</div>

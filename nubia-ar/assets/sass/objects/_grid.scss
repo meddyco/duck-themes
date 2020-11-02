@@ -1,0 +1,126 @@
+/*------------------------------------*\
+  Objects > Grid
+\*------------------------------------*/
+
+$grid-width: 1200px;
+$grid-gutter: $base-spacing-unit;
+
+.o-grid {
+  margin: 0 auto;
+  max-width: $grid-width;
+
+  @include clearfix();
+
+  @include mq($from: tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .o-grid {
+    margin-right: - $grid-gutter;
+    margin-left: - $grid-gutter;
+    padding: 0;
+  }
+
+  &--full {
+    max-width: 100vw;
+  }
+}
+
+.o-grid__col {
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+
+  @include mq($from: tablet) {
+    flex-grow: 1;
+  }
+
+  &--1-3-s {
+    width: percentage(1 / 3);
+  } // 33.33333%;
+
+  &--2-3-s {
+    width: percentage(2 / 3);
+  } // 66.66666667%;
+
+  &--1-4-s {
+    width: percentage(1 / 4);
+  } // 25%
+
+  &--2-4-s {
+    width: percentage(2 / 4);
+  } // 50%
+
+  &--3-4-s {
+    width: percentage(3 / 4);
+  } // 75%;
+
+  &--4-4-s {
+    width: 100%;
+  }
+
+  @include mq($from: tablet) {
+    &--1-3-m {
+      width: percentage(1 / 3);
+    } // 33.33333%;
+
+    &--2-3-m {
+      width: percentage(2 / 3);
+    } // 66.66666667%;
+
+    &--1-4-m {
+      width: percentage(1 / 4);
+    } // 25%
+
+    &--2-4-m {
+      width: percentage(2 / 4);
+    } // 50%
+
+    &--3-4-m {
+      width: percentage(3 / 4);
+    } // 75%;
+
+    &--4-4-m {
+      width: 100%;
+    }
+  }
+
+  @include mq($from: desktop) {
+    &--1-3-l {
+      width: percentage(1 / 3);
+    } // 33.33333%;
+
+    &--2-3-l {
+      width: percentage(2 / 3);
+    } // 66.66666667%;
+
+    &--1-4-l {
+      width: percentage(1 / 4);
+    } // 25%
+
+    &--2-4-l {
+      width: percentage(2 / 4);
+    } // 50%
+
+    &--3-4-l {
+      width: percentage(3 / 4);
+    } // 75%;
+
+    &--4-4-l {
+      width: 100%;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--center {
+    margin: 0 auto;
+    flex-grow: initial;
+  }
+
+  &--end {
+    margin-left: auto;
+  }
+}

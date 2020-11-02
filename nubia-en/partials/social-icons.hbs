@@ -1,0 +1,29 @@
+<ul class='c-social-icons o-plain-list'>
+  {{#if @site.twitter}}
+    <li class='c-social-icons__item'>
+      <a href='{{ twitter_url }}' aria-label='Twitter' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-twitter' data-size='s'></span>
+      </a>
+    </li>
+  {{/if}}
+
+  {{#if @site.facebook}}
+    <li class='c-social-icons__item'>
+      <a href='{{ facebook_url }}' aria-label='Facebook' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-facebook' data-size='s'></span>
+      </a>
+    </li>
+  {{/if}}
+
+  <li class='c-social-icons__item'>
+    <a href='#' aria-label='Instagram' target='_blank' rel='noopener'>
+      <span class='c-social-icons__icon' data-icon='ei-sc-instagram' data-size='s'></span>
+    </a>
+  </li>
+
+  <li class='c-social-icons__item'>
+    <a href='#' aria-label='Pinterest' target='_blank' rel='noopener'>
+      <span class='c-social-icons__icon' data-icon='ei-sc-pinterest' data-size='s'></span>
+    </a>
+  </li>
+</ul>

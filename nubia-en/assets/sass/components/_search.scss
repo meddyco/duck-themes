@@ -1,0 +1,177 @@
+/*------------------------------------*\
+  Components > Search
+\*------------------------------------*/
+
+.c-search {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: quadruple($base-spacing-unit) + $base-spacing-unit;
+  background: $bg-color;
+
+  z-index: -1;
+  opacity: 0;
+  transform: scale(.96);
+  transition: transform half($global-transition) cubic-bezier(.694, 0, .335,  1),
+              opacity   half($global-transition) cubic-bezier(.8,   0, .55, .94),
+              z-index   half($global-transition) step-end;
+
+
+  @include mq($from: tablet) {
+    padding-top: quadruple($base-spacing-unit);
+  }
+
+  &.is-active {
+    z-index: 10;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform half($global-transition) cubic-bezier(.8, 0, .55, .94),
+                opacity   half($global-transition) cubic-bezier(.8, 0, .55, .94),
+                z-index   half($global-transition) step-start;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: $base-spacing-unit;
+    padding-right: $base-spacing-unit;
+  }
+
+  &__icon {
+    position: absolute;
+    left: $base-spacing-unit;
+    fill: $color-gray;
+    width: double($base-spacing-unit);
+    height: double($base-spacing-unit);
+  }
+
+  &__input[type='search'] {
+    width: 100%;
+    outline: none;
+    margin-bottom: 0;
+    padding-left: triple($base-spacing-unit) + half($base-spacing-unit);
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
+
+    border: 0;
+    color: $color-text;
+    background-color: $bg-gray;
+    border-radius: $global-border-radius;
+
+    &::placeholder {
+      opacity: 1;
+      color: $color-gray;
+    }
+
+    @include mq($from: tablet) {
+      font-size: double($font-size-tiny);
+    }
+  }
+
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: $base-spacing-unit;
+    right: double($base-spacing-unit);
+    width: double($base-spacing-unit) + $base-spacing-unit;
+    height: double($base-spacing-unit) + $base-spacing-unit;
+
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: $bg-gray;
+
+    @include mq($from: tablet) {
+      top: double($base-spacing-unit);
+    }
+
+    .icon {
+      fill: $color-gray;
+      transition: $global-transition;
+    }
+
+    &:hover {
+      .icon {
+        fill: $color-text;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.c-search-results {
+  display: none;
+  height: calc(100vh - #{quadruple(double($base-spacing-unit)) + double($base-spacing-unit) + half($base-spacing-unit)}); // => calc(100vh - 168px)
+  overflow: auto;
+  white-space: normal;
+  margin-top: $base-spacing-unit;
+  margin-left: $base-spacing-unit;
+  padding-right: $base-spacing-unit;
+  counter-reset: search;
+
+  @include mq($from: tablet) {
+    height: calc(100vh - #{quadruple(double($base-spacing-unit)) + double($base-spacing-unit)}); // => calc(100vh - 160px)
+  }
+}
+
+.c-search-result {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  padding: $base-spacing-unit $base-spacing-unit $base-spacing-unit double($base-spacing-unit);
+  background-color: $bg-gray;
+  border-radius: $global-border-radius;
+
+  &:not(:last-child) {
+    margin-bottom: $base-spacing-unit;
+  }
+
+  &:before {
+    counter-increment: search;
+    content: counter(search) '. ';
+    position: relative;
+    left: - $base-spacing-unit;
+    font-size: $font-size-base;
+    font-style: italic;
+    font-family: $font-serif;
+    color: $color-brand;
+  }
+
+  &__media {
+    margin-left: $base-spacing-unit;
+    background-color: $bg-gray;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    display: block;
+    width: quadruple($base-spacing-unit);
+    height: triple($base-spacing-unit);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $bg-white;
+  }
+
+  &__title {
+    margin-bottom: half($base-spacing-unit);
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+  }
+
+  &__date {
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+  }
+}

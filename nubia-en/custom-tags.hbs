@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-archive'>
+        <h2 class='c-archive__title'>{{ title }}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class='o-grid'>
+    {{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+      {{#foreach tags}}
+        {{> tag-card }}
+      {{/foreach}}
+    {{/get}}
+  </div>
+
+</div>
+
+{{/post}}

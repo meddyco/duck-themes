@@ -1,0 +1,73 @@
+{{!< default}}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      {{#author}}
+        <div class='c-author'>
+          {{#if profile_image}}
+            <div class='c-author__media'>
+              <img src='{{ profile_image }}' alt='{{ name }}' class='c-author__image'>
+            </div>
+          {{/if}}
+
+          <div class='c-author__content'>
+            <h2 class='c-author__title'>{{ name }}</h2>
+            {{#if bio}}
+              <p class='c-author__bio'>{{ bio }}</p>
+            {{/if}}
+          </div>
+
+          <div class='c-author__links'>
+            <ul class='o-plain-list'>
+              {{#if twitter}}
+                <li class='c-author__links-item'>
+                  <a href='{{ twitter_url }}' aria-label='Twitter' target='_blank' rel='noopener'>
+                    <span class='c-author__links-icon' data-icon='ei-sc-twitter' data-size='s'></span>
+                  </a>
+                </li>
+              {{/if}}
+
+              {{#if facebook}}
+                <li class='c-author__links-item'>
+                  <a href='{{ facebook_url }}' aria-label='Facebook' target='_blank' rel='noopener'>
+                    <span class='c-author__links-icon' data-icon='ei-sc-facebook' data-size='s'></span>
+                  </a>
+                </li>
+              {{/if}}
+
+              {{#if website}}
+                <li class='c-author__links-item'>
+                  <a href='{{ website }}' aria-label='Website' target='_blank' rel='noopener'>
+                    <span class='c-author__links-icon' data-icon='ei-link' data-size='s'></span>
+                  </a>
+                </li>
+              {{/if}}
+
+              {{#if location}}
+                <li class='c-author__links-item' aria-label='Location'>
+                  <span class='c-author__links-icon' data-icon='ei-location' data-size='s'></span>{{ location }}
+                </li>
+              {{/if}}
+
+              <li class='c-author__links-item' aria-label='Posts'>
+                <span class='c-author__links-icon' data-icon='ei-chart' data-size='s'></span>
+                {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      {{/author}}
+    </div>
+  </div>
+
+  <div class='o-grid js-grid'>
+    {{> loop }}
+  </div>
+
+  <div class='o-grid'>
+    {{ pagination }}
+  </div>
+
+</div>
