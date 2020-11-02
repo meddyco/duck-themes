@@ -1,0 +1,14 @@
+{
+  "name": "nubia",
+  "description": "Responsive & Multipurpose Ghost Theme",
+  "authors": [
+    "Aspire Themes"
+  ],
+  "dependencies": {
+    "jQuery-viewport-checker": "^1.8.8",
+    "jquery.fitvids": "fitvids#^1.1.0",
+    "jquery": "^3.2.1",
+    "zoom.js": "^0.0.1",
+    "bootstrap-transition": "*"
+  }
+}

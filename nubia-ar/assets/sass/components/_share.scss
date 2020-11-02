@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  Components > Share Icons
+\*------------------------------------*/
+
+.c-share {
+  display: flex;
+
+  @include mq($until: desktop) {
+    margin-top: $base-spacing-unit;
+  }
+
+  &__item {
+    flex: 1;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-right: quarter($base-spacing-unit) solid $bg-color;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: half(quarter($base-spacing-unit));
+    background-color: $color-gray;
+    transition: $global-transition;
+
+    @include attention() {
+      opacity: .8;
+    }
+
+    &--twitter {
+      background-color: $bg-twitter;
+    }
+
+    &--facebook {
+      background-color: $bg-facebook;
+    }
+
+    &--linkedin {
+      background-color: $bg-linkedin;
+    }
+
+    &--pinterest {
+      background-color: $bg-pinterest;
+    }
+
+    &--email {
+      background-color: $color-black;
+    }
+
+    &--clipboard {
+      background-color: $bg-clipboard;
+    }
+  }
+
+  &__icon {
+    vertical-align: middle;
+    fill: $color-white;
+  }
+}

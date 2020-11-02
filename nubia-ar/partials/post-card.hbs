@@ -1,0 +1,86 @@
+<div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l c-post-card-wrap js-post-card-wrap
+  {{#is 'home'}} {{#if @first}} o-grid__col--4-4-m o-grid__col--2-3-l {{/if}} {{/is}}'>
+
+  <div class='c-post-card {{#unless feature_image}} c-post-card--raw {{/unless}} {{#is 'home'}} {{#if @first}} c-post-card--first {{/if}} {{/is}}'>
+    {{#if feature_image}}
+      <div class='c-post-card__media'>
+        <a href='{{ url }}' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt="{{title}}"
+            class="c-post-card__image js-fadein"
+            srcset="
+              {{img_url feature_image size="s"}} 380w,
+              {{img_url feature_image size="m"}} 600w,
+              {{img_url feature_image size="l"}} 1000w
+            "
+            src="{{img_url feature_image size="m"}}"
+          />
+          {{#if featured}}
+            <span title='{{t "Featured Post" }}'>
+              <span class='c-post-card--featured__icon' data-icon='ei-star' data-size='s'></span>
+            </span>
+          {{/if}}
+        </a>
+      </div>
+    {{/if}}
+
+    <div class='c-post-card__content'>
+      {{#if tags}}
+        <div class='c-post-card__tags'>
+          {{ tags separator=' / ' limit='1' }}
+        </div>
+      {{/if}}
+
+      <div class='c-post-card__share'>
+        <a title='{{t "Share on Twitter" }}'
+           aria-label='{{t "Share on Twitter" }}'
+           tabindex='-1'
+           href="https://twitter.com/share?text={{ encode title }}&amp;url={{ url absolute='true' }}"
+           onclick="window.open(this.href, 'twitter-share', 'width=550, height=235'); return false;">
+          <span class='icon icon--ei-sc-twitter icon--s c-post-card__share-icon c-post-card__share-icon-twitter'>
+            <svg class='icon__cnt'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#ei-sc-twitter-icon'></use></svg>
+          </span>
+        </a>
+        <a title='{{t "Share on Facebook" }}'
+           aria-label='{{t "Share on Facebook" }}'
+           tabindex='-1'
+           href="https://www.facebook.com/sharer/sharer.php?u={{ url absolute='true' }}"
+           onclick="window.open(this.href, 'facebook-share', 'width=580, height=296'); return false;">
+          <span class='icon icon--ei-sc-facebook icon--s c-post-card__share-icon c-post-card__share-icon-facebook'>
+            <svg class='icon__cnt'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#ei-sc-facebook-icon'></use></svg>
+          </span>
+        </a>
+        <a title='{{t "Share on LinkedIn" }}'
+           aria-label='{{t "Share on LinkedIn" }}'
+           tabindex='-1'
+           href="https://www.linkedin.com/shareArticle?mini=true&url={{ url absolute='true' }}&title={{ encode title }}"
+           onclick="window.open(this.href, 'linkedin-share', 'width=580, height=296'); return false;">
+          <span class='icon icon--ei-sc-linkedin icon--s c-post-card__share-icon c-post-card__share-icon-linkedin'>
+            <svg class='icon__cnt'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#ei-sc-linkedin-icon'></use></svg>
+          </span>
+        </a>
+        <a title='{{t "Share on Pinterest" }}'
+           aria-label='{{t "Share on Pinterest" }}'
+           tabindex='-1'
+           href="http://pinterest.com/pin/create/button/?url={{ url absolute='true' }}&media={{ @site.url }}{{ feature_image }}&description={{ encode title }}"
+           onclick="window.open(this.href, 'pinterest-share', 'width=580, height=296'); return false;">
+          <span class='icon icon--ei-sc-pinterest icon--s c-post-card__share-icon c-post-card__share-icon-pinterest'>
+            <svg class='icon__cnt'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#ei-sc-pinterest-icon'></use></svg>
+          </span>
+        </a>
+      </div>
+
+      <h2 class='c-post-card__title'>
+        <a href='{{ url }}' class='c-post-card__title-link'>
+          {{ title }}
+        </a>
+      </h2>
+
+      <div class='c-post-card__meta'>
+        <time class='c-post-card__date' datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD.MMM.YYYY' }}</time>
+        <div class='c-post-card__author'>{{#primary_author}}<a href='{{ url }}'>{{ name }}</a>{{/primary_author}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

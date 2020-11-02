@@ -1,0 +1,21 @@
+{{#get 'posts' limit='5' include='authors' filter='id:-{{post.id}}' as |recent-posts|}}
+  {{#if recent-posts}}
+    <div class='c-widget'>
+      <h3 class='c-widget__title'>{{t 'Recent Posts' }}</h3>
+
+      {{#foreach recent-posts visibility='all'}}
+        <a href='{{ url }}' class='c-teaser'>
+          <div class='c-teaser__content'>
+            <h3 class='c-teaser__title'>{{ title }}</h3>
+            <time class='c-teaser__date' datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD.MMM.YYYY' }}</time>
+          </div>
+          {{#if feature_image}}
+            <div class='c-teaser__media'>
+              <div class='c-teaser__image js-fadein' style='background-image: url({{img_url feature_image size="s"}})' aria-label='{{ title }}'></div>
+            </div>
+          {{/if}}
+        </a>
+      {{/foreach}}
+    </div>
+  {{/if}}
+{{/get}}

@@ -1,0 +1,11 @@
+<div class='c-widget'>
+  <h3 class='c-widget__title'>{{t 'Tags' }}</h3>
+
+  <div class='c-tags'>
+    {{#get 'tags' limit='all'}}
+      {{#foreach tags}}
+        <a href='{{ url }}'>{{ name }}</a>
+      {{/foreach}}
+    {{/get}}
+  </div>
+</div>

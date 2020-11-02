@@ -1,0 +1,31 @@
+<div class='o-grid'>
+  <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--1-3-l'>
+    <button class='c-btn c-btn--full js-load-disqus' onclick='disqus(); return false;'>{{t 'Comments' }}</button>
+  </div>
+
+  <hr>
+</div>
+
+<div id='disqus_thread'></div>
+<script>
+  var disqus_shortname = 'aspirethemes-demos'; // required: replace `aspirethemes-demos` with your Disqus shortname
+
+  // DON'T EDIT BELOW THIS LINE
+  var disqus_config = function () {
+    this.page.url ='{{url absolute="true"}}'
+    this.page.identifier = 'ghost-{{comment_id}}';
+  };
+
+  function disqus() {
+    var d = document, s = d.createElement('script');
+
+    s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+
+    document.getElementsByClassName('js-load-disqus')[0].setAttribute('disabled', '');
+    document.getElementsByClassName('js-load-disqus')[0].classList.add('c-btn--disabled');
+  }
+</script>
+<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>

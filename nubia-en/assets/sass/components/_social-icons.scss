@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  Components > Social Icons / Footer
+\*------------------------------------*/
+
+.c-social-icons {
+  text-align: center;
+
+  @include mq($from: tablet) {
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: flex;
+  }
+
+  &__icon {
+    fill: $color-gray;
+  }
+}

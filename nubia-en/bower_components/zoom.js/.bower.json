@@ -1,0 +1,14 @@
+{
+  "name": "zoom.js",
+  "homepage": "https://github.com/fat/zoom.js",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "fd4f3e43153da7596da0bade198e99f98b47791e"
+  },
+  "_source": "https://github.com/fat/zoom.js.git",
+  "_target": "^0.0.1",
+  "_originalSource": "zoom.js"
+}
